@@ -41,11 +41,15 @@
 
     if (count == 0) {
       console.log("Sorry, the letter " + letter + " shows up " + count + " times in " + x)
+      return count;
     } else {
       console.log("Yeah, the letter " + letter + " exists " + count + " times in " + x)
+      return count;
     }
   }
   hangman("Hello", "z");
   hangman("Hello", "h");
+
+  module.exports = hangman;
 
 })()
